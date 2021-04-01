@@ -1,0 +1,141 @@
+**EnumAddressSpaceElementData Enumeration**
+-------------------------------------------
+
+Describes the data the DaAddressSpaceRoot::queryAddressSpaceElementData
+callback has to provide.
+
+| **Namespace:** `Softing.OPCToolbox <N_Softing_OPCToolbox.htm>`__
+| **Assembly:** TBN40 (in TBN40.dll) Version: 4.47.1.3920 (4.47.1.3920)
+
+Syntax
+~~~~~~
+
+C
+^
+
+::
+
+   public enum EnumAddressSpaceElementData
+
+Visual Basic
+^^^^^^^^^^^^
+
+::
+
+   Public Enumeration EnumAddressSpaceElementData
+
+Visual C++
+^^^^^^^^^^
+
+::
+
+   public enum class EnumAddressSpaceElementData
+
+Members
+~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| NAME                  | 1                     | If set,               |
+|                       |                       | OTSAddressSp          |
+|                       |                       | aceElementData.m_name |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| ITEMID                | 2                     | If set,               |
+|                       |                       | OTSAddressSpac        |
+|                       |                       | eElementData.m_itemID |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| ACCESSRIGHTS          | 4                     | If set,               |
+|                       |                       | OTSAddressSpaceEleme  |
+|                       |                       | ntData.m_accessRights |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| IOMODE                | 8                     | If set,               |
+|                       |                       | OTSAddressSpac        |
+|                       |                       | eElementData.m_ioMode |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| HASCHILDREN           | 16                    | If set,               |
+|                       |                       | OTSAddressSpaceElem   |
+|                       |                       | entData.m_hasChildren |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| ISBROWSABLE           | 32                    | If set,               |
+|                       |                       | OTSAddressSpaceElem   |
+|                       |                       | entData.m_isBrowsable |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| USERDATA              | 64                    | If set,               |
+|                       |                       | OTSAddressSpaceE      |
+|                       |                       | lementData.m_userData |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| DATATYPE              | 128                   | If set,               |
+|                       |                       | OTSAddressSpaceE      |
+|                       |                       | lementData.m_dataType |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| ELEMENTTYPE           | 256                   | If set,               |
+|                       |                       | OTSAddressSpaceElem   |
+|                       |                       | entData.m_elementType |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+
+Unmanages Members
+~~~~~~~~~~~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| EnumAddr              | 1                     | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSp          |
+| NAME                  |                       | aceElementData.m_name |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 2                     | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpac        |
+| ITEMID                |                       | eElementData.m_itemID |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 4                     | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpaceEleme  |
+| ACCESSRIGHTS          |                       | ntData.m_accessRights |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 8                     | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpac        |
+| IOMODE                |                       | eElementData.m_ioMode |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 16                    | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpaceElem   |
+| HASCHILDREN           |                       | entData.m_hasChildren |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 32                    | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpaceElem   |
+| ISBROWSABLE           |                       | entData.m_isBrowsable |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 64                    | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpaceE      |
+| USERDATA              |                       | lementData.m_userData |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 128                   | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpaceE      |
+| DATATYPE              |                       | lementData.m_dataType |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+| EnumAddr              | 256                   | If set,               |
+| essSpaceElementData\_ |                       | OTSAddressSpaceElem   |
+| ELEMENTTYPE           |                       | entData.m_elementType |
+|                       |                       | must be provided      |
++-----------------------+-----------------------+-----------------------+
+
+See Also
+~~~~~~~~
+
+`Softing.OPCToolbox Namespace <N_Softing_OPCToolbox.htm>`__
