@@ -1,0 +1,73 @@
+**EnumFeature Enumeration**
+---------------------------
+
+| **Namespace:** `Softing.OPCToolbox <N_Softing_OPCToolbox.htm>`__
+| **Assembly:** TBN40 (in TBN40.dll) Version: 4.47.1.3920 (4.47.1.3920)
+
+Syntax
+~~~~~~
+
+Unmanaged C++
+^^^^^^^^^^^^^
+
+::
+
+   typedef enum tagEnumFeature{    }EnumFeature;
+
+C
+^
+
+::
+
+   public enum EnumFeature
+
+Visual Basic
+^^^^^^^^^^^^
+
+::
+
+   Public Enumeration EnumFeature
+
+Visual C++
+^^^^^^^^^^
+
+::
+
+   public enum class EnumFeature
+
+Members
+~~~~~~~
+
+=============== ========= =========================
+**Member name** **Value** **Description**
+=============== ========= =========================
+DA_SERVER       1         Data Access Server.
+XMLDA_SERVER    2         XML - Data Access Server.
+AE_SERVER       4         Alarms and Events Server.
+TP_SERVER       8         OPC Tunnel Server.
+DA_CLIENT       16        Data Access Client.
+XMLDA_CLIENT    32        XML - Data Access Client.
+AE_CLIENT       64        Alarms and Events Client.
+TP_CLIENT       128       OPC Tunnel Client.
+=============== ========= =========================
+
+Unmanaged Members
+~~~~~~~~~~~~~~~~~
+
+========================== ========= =========================
+**Member name**            **Value** **Description**
+========================== ========= =========================
+EnumFeature\_ DA_SERVER    1         Data Access Server.
+EnumFeature\_ XMLDA_SERVER 2         XML - Data Access Server.
+EnumFeature\_ AE_SERVER    4         Alarms and Events Server.
+EnumFeature\_ TP_SERVER    8         OPC Tunnel Server.
+EnumFeature\_ DA_CLIENT    16        Data Access Client.
+EnumFeature\_ XMLDA_CLIENT 32        XML - Data Access Client.
+EnumFeature\_ AE_CLIENT    64        Alarms and Events Client.
+EnumFeature\_ TP_CLIENT    128       OPC Tunnel Client.
+========================== ========= =========================
+
+See Also
+~~~~~~~~
+
+`Softing.OPCToolbox Namespace <N_Softing_OPCToolbox.htm>`__

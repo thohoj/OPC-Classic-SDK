@@ -1,0 +1,143 @@
+**EnumConditionChange Enumeration**
+-----------------------------------
+
+Describes which properties of the condition have been changed causing
+the server to send an event notification.
+
+| **Namespace:** `Softing.OPCToolbox <N_Softing_OPCToolbox.htm>`__
+| **Assembly:** TBN40 (in TBN40.dll) Version: 4.47.1.3920 (4.47.1.3920)
+
+Syntax
+~~~~~~
+
+Unmanaged C++
+^^^^^^^^^^^^^
+
+::
+
+   typedef enum tagEnumExecutionType{  
+       }EnumConditionChange;
+
+C
+^
+
+::
+
+   public enum EnumConditionChange
+
+Visual Basic
+^^^^^^^^^^^^
+
+::
+
+   Public Enumeration EnumConditionChange
+
+Visual C++
+^^^^^^^^^^
+
+::
+
+   public enum class EnumConditionChange
+
+Members
+~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| ACTIVE_STATE          | 1                     | The condition’s       |
+|                       |                       | active state has      |
+|                       |                       | changed.              |
++-----------------------+-----------------------+-----------------------+
+| ACK_STATE             | 2                     | The condition’s       |
+|                       |                       | acknowledgment state  |
+|                       |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+| ENABLE_STATE          | 4                     | The condition’s       |
+|                       |                       | enabled state has     |
+|                       |                       | changed.              |
++-----------------------+-----------------------+-----------------------+
+| STATE                 | 7                     | The condition’s state |
+|                       |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+| QUALITY               | 8                     | The condition’s       |
+|                       |                       | quality has changed.  |
++-----------------------+-----------------------+-----------------------+
+| SEVERITY              | 16                    | The severity level    |
+|                       |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+| SUBCONDITION          | 32                    | The condition has     |
+|                       |                       | transitioned into a   |
+|                       |                       | new sub-condition.    |
++-----------------------+-----------------------+-----------------------+
+| MESSAGE               | 64                    | The event message has |
+|                       |                       | changed (compared to  |
+|                       |                       | prior event           |
+|                       |                       | notifications related |
+|                       |                       | to this condition).   |
++-----------------------+-----------------------+-----------------------+
+| ATTRIBUTE             | 128                   | One or more event     |
+|                       |                       | attributes have       |
+|                       |                       | changed (compared to  |
+|                       |                       | prior event           |
+|                       |                       | notifications related |
+|                       |                       | to this condition).   |
++-----------------------+-----------------------+-----------------------+
+| ACK_DATA              | 32768                 | The condition’s       |
+|                       |                       | acknowledgment data   |
+|                       |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+
+Unmanaged Members
+~~~~~~~~~~~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| EnumConditionChange\_ | 1                     | The condition’s       |
+| ACTIVE_STATE          |                       | active state has      |
+|                       |                       | changed.              |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 2                     | The condition’s       |
+| ACK_STATE             |                       | acknowledgment state  |
+|                       |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 4                     | The condition’s       |
+| ENABLE_STATE          |                       | enabled state has     |
+|                       |                       | changed.              |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 7                     | The condition’s state |
+| STATE                 |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 8                     | The condition’s       |
+| QUALITY               |                       | quality has changed.  |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 16                    | The severity level    |
+| SEVERITY              |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 32                    | The condition has     |
+| SUBCONDITION          |                       | transitioned into a   |
+|                       |                       | new sub-condition.    |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 64                    | The event message has |
+| MESSAGE               |                       | changed (compared to  |
+|                       |                       | prior event           |
+|                       |                       | notifications related |
+|                       |                       | to this condition).   |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 128                   | One or more event     |
+| ATTRIBUTE             |                       | attributes have       |
+|                       |                       | changed (compared to  |
+|                       |                       | prior event           |
+|                       |                       | notifications related |
+|                       |                       | to this condition).   |
++-----------------------+-----------------------+-----------------------+
+| EnumConditionChange\_ | 32768                 | The condition’s       |
+| ACK_DATA              |                       | acknowledgment data   |
+|                       |                       | has changed.          |
++-----------------------+-----------------------+-----------------------+
+
+See Also
+~~~~~~~~
+
+`Softing.OPCToolbox Namespace <N_Softing_OPCToolbox.htm>`__

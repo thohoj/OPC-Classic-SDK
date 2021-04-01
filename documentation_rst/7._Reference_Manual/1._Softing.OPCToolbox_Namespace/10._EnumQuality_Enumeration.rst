@@ -1,0 +1,241 @@
+**EnumQuality Enumeration**
+---------------------------
+
+| **Namespace:** `Softing.OPCToolbox <N_Softing_OPCToolbox.htm>`__
+| **Assembly:** TBN40 (in TBN40.dll) Version: 4.47.1.3920 (4.47.1.3920)
+
+Syntax
+~~~~~~
+
+Unmanaged C++
+^^^^^^^^^^^^^
+
+::
+
+   typedef enum tagEnumQuality{    }EnumQuality;
+
+C
+^
+
+::
+
+   public enum EnumQuality
+
+Visual Basic
+^^^^^^^^^^^^
+
+::
+
+   Public Enumeration EnumQuality
+
+Visual C++
+^^^^^^^^^^
+
+::
+
+   public enum class EnumQuality
+
+Members
+~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| GOOD                  | 192                   | The value is good.    |
++-----------------------+-----------------------+-----------------------+
+| GOOD_LOCAL_OVERRIDE   | 216                   | The value has been    |
+|                       |                       | overridden. Typically |
+|                       |                       | this means that the   |
+|                       |                       | input has been        |
+|                       |                       | disconnected and a    |
+|                       |                       | manually value has    |
+|                       |                       | been forced.          |
++-----------------------+-----------------------+-----------------------+
+| BAD                   | 0                     | The value is bad but  |
+|                       |                       | no specific reason is |
+|                       |                       | known.                |
++-----------------------+-----------------------+-----------------------+
+| BAD_CONFIG_ERROR      | 4                     | There is a server     |
+|                       |                       | specific problem with |
+|                       |                       | the configuration.    |
++-----------------------+-----------------------+-----------------------+
+| BAD_NOT_CONNECTED     | 8                     | The input is required |
+|                       |                       | to be logically       |
+|                       |                       | connected to          |
+|                       |                       | something but the     |
+|                       |                       | connection couldn’t   |
+|                       |                       | be established.       |
++-----------------------+-----------------------+-----------------------+
+| BAD_DEVICE_FAILURE    | 12                    | A device failure has  |
+|                       |                       | been detected.        |
++-----------------------+-----------------------+-----------------------+
+| BAD_SENSOR_FAILURE    | 16                    | A sensor failure has  |
+|                       |                       | been detected .       |
++-----------------------+-----------------------+-----------------------+
+| BAD_LAST_KNOWN        | 20                    | Communications have   |
+|                       |                       | failed. However, the  |
+|                       |                       | last known value is   |
+|                       |                       | available.            |
++-----------------------+-----------------------+-----------------------+
+| BAD_COMM_FAILURE      | 24                    | Communications have   |
+|                       |                       | failed. No last known |
+|                       |                       | value is available.   |
++-----------------------+-----------------------+-----------------------+
+| BAD_OUT_OF_SERVICE    | 28                    | The block is off scan |
+|                       |                       | or otherwise locked.  |
++-----------------------+-----------------------+-----------------------+
+| BAD_WAI               | 32                    | The initial quality   |
+| TING_FOR_INITIAL_DATA |                       | for the data items    |
+|                       |                       | added to a            |
+|                       |                       | subscription.         |
++-----------------------+-----------------------+-----------------------+
+| UNCERTAIN             | 64                    | There is no specific  |
+|                       |                       | reason why the value  |
+|                       |                       | is uncertain.         |
++-----------------------+-----------------------+-----------------------+
+| UNCERTAIN_LAST_USABLE | 68                    | The last usable       |
+|                       |                       | value.                |
++-----------------------+-----------------------+-----------------------+
+| UNCERTAIN_SENSOR_CAL  | 80                    | Either the value has  |
+|                       |                       | pegged at one of the  |
+|                       |                       | sensor limits (in     |
+|                       |                       | which case the limit  |
+|                       |                       | field should be set   |
+|                       |                       | to 1 or 2) or the     |
+|                       |                       | sensor is otherwise   |
+|                       |                       | known to be out of    |
+|                       |                       | calibration.          |
++-----------------------+-----------------------+-----------------------+
+| U                     | 84                    | The returned value is |
+| NCERTAIN_EGU_EXCEEDED |                       | outside the limits    |
+|                       |                       | defined for this      |
+|                       |                       | parameter. Note that  |
+|                       |                       | in this case the      |
+|                       |                       | limit flag indicates  |
+|                       |                       | which limit has been  |
+|                       |                       | exceeded.             |
++-----------------------+-----------------------+-----------------------+
+| UNCER                 | 85                    | The returned value is |
+| TAIN_EGU_EXCEEDED_LOW |                       | under the limit       |
+|                       |                       | defined for this      |
+|                       |                       | parameter.            |
++-----------------------+-----------------------+-----------------------+
+| UNCERT                | 86                    | The returned value is |
+| AIN_EGU_EXCEEDED_HIGH |                       | over the limit        |
+|                       |                       | defined for this      |
+|                       |                       | parameter.            |
++-----------------------+-----------------------+-----------------------+
+| UNCERTAIN_SUB_NORMAL  | 88                    | The value is derived  |
+|                       |                       | from multiple sources |
+|                       |                       | and has less than the |
+|                       |                       | required number of    |
+|                       |                       | good sources.         |
++-----------------------+-----------------------+-----------------------+
+| QUALITY_NOT_SET       | 65535                 | The quality is not    |
+|                       |                       | set.                  |
++-----------------------+-----------------------+-----------------------+
+
+Unmanaged Members
+~~~~~~~~~~~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| EnumQuality\_ GOOD    | 192                   | The value is good.    |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 216                   | The value has been    |
+| GOOD_LOCAL_OVERRIDE   |                       | overridden. Typically |
+|                       |                       | this means that the   |
+|                       |                       | input has been        |
+|                       |                       | disconnected and a    |
+|                       |                       | manually value has    |
+|                       |                       | been forced.          |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_ BAD     | 0                     | The value is bad but  |
+|                       |                       | no specific reason is |
+|                       |                       | known.                |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 4                     | There is a server     |
+| BAD_CONFIG_ERROR      |                       | specific problem with |
+|                       |                       | the configuration.    |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 8                     | The input is required |
+| BAD_NOT_CONNECTED     |                       | to be logically       |
+|                       |                       | connected to          |
+|                       |                       | something but the     |
+|                       |                       | connection couldn’t   |
+|                       |                       | be established.       |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 12                    | A device failure has  |
+| BAD_DEVICE_FAILURE    |                       | been detected.        |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 16                    | A sensor failure has  |
+| BAD_SENSOR_FAILURE    |                       | been detected .       |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 20                    | Communications have   |
+| BAD_LAST_KNOWN        |                       | failed. However, the  |
+|                       |                       | last known value is   |
+|                       |                       | available.            |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 24                    | Communications have   |
+| BAD_COMM_FAILURE      |                       | failed. No last known |
+|                       |                       | value is available.   |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 28                    | The block is off scan |
+| BAD_OUT_OF_SERVICE    |                       | or otherwise locked.  |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 32                    | The initial quality   |
+| BAD_WAI               |                       | for the data items    |
+| TING_FOR_INITIAL_DATA |                       | added to a            |
+|                       |                       | subscription.         |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 64                    | There is no specific  |
+| UNCERTAIN             |                       | reason why the value  |
+|                       |                       | is uncertain.         |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 68                    | The last usable       |
+| UNCERTAIN_LAST_USABLE |                       | value.                |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 80                    | Either the value has  |
+| UNCERTAIN_SENSOR_CAL  |                       | pegged at one of the  |
+|                       |                       | sensor limits (in     |
+|                       |                       | which case the limit  |
+|                       |                       | field should be set   |
+|                       |                       | to 1 or 2) or the     |
+|                       |                       | sensor is otherwise   |
+|                       |                       | known to be out of    |
+|                       |                       | calibration.          |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 84                    | The returned value is |
+| U                     |                       | outside the limits    |
+| NCERTAIN_EGU_EXCEEDED |                       | defined for this      |
+|                       |                       | parameter. Note that  |
+|                       |                       | in this case the      |
+|                       |                       | limit flag indicates  |
+|                       |                       | which limit has been  |
+|                       |                       | exceeded.             |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 85                    | The returned value is |
+| UNCER                 |                       | under the limit       |
+| TAIN_EGU_EXCEEDED_LOW |                       | defined for this      |
+|                       |                       | parameter.            |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 86                    | The returned value is |
+| UNCERT                |                       | over the limit        |
+| AIN_EGU_EXCEEDED_HIGH |                       | defined for this      |
+|                       |                       | parameter.            |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 88                    | The value is derived  |
+| UNCERTAIN_SUB_NORMAL  |                       | from multiple sources |
+|                       |                       | and has less than the |
+|                       |                       | required number of    |
+|                       |                       | good sources.         |
++-----------------------+-----------------------+-----------------------+
+| EnumQuality\_         | 65535                 | The quality is not    |
+| QUALITY_NOT_SET       |                       | set.                  |
++-----------------------+-----------------------+-----------------------+
+
+See Also
+~~~~~~~~
+
+`Softing.OPCToolbox Namespace <N_Softing_OPCToolbox.htm>`__

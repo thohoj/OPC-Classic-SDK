@@ -1,0 +1,441 @@
+**EnumPropertyId Enumeration**
+------------------------------
+
+| **Namespace:** `Softing.OPCToolbox <N_Softing_OPCToolbox.htm>`__
+| **Assembly:** TBN40 (in TBN40.dll) Version: 4.47.1.3920 (4.47.1.3920)
+
+Syntax
+~~~~~~
+
+Unmanaged C++
+^^^^^^^^^^^^^
+
+::
+
+   typedef enum tagEnumPropertyId{ }EnumPropertyId;
+
+C
+^
+
+::
+
+   public enum EnumPropertyId
+
+Visual Basic
+^^^^^^^^^^^^
+
+::
+
+   Public Enumeration EnumPropertyId
+
+Visual C++
+^^^^^^^^^^
+
+::
+
+   public enum class EnumPropertyId
+
+Members
+~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| IT                    | 1                     | Item canonical        |
+| EM_CANONICAL_DATATYPE |                       | datatype (VT I2).     |
++-----------------------+-----------------------+-----------------------+
+| ITEM_VALUE            | 2                     | Item value (variant). |
++-----------------------+-----------------------+-----------------------+
+| ITEM_QUALITY          | 3                     | Item quality (VT I2). |
++-----------------------+-----------------------+-----------------------+
+| ITEM_TIMESTAMP        | 4                     | Item timestamp (VT    |
+|                       |                       | DATE).                |
++-----------------------+-----------------------+-----------------------+
+| ITEM_ACCESS_RIGHTS    | 5                     | Item access rights    |
+|                       |                       | (VT I4).              |
++-----------------------+-----------------------+-----------------------+
+| SERVER_SCAN_RATE      | 6                     | Server scan rate in   |
+|                       |                       | milliseconds(VT R4).  |
++-----------------------+-----------------------+-----------------------+
+| ITEM_EU_TYPE          | 7                     | Item EU type (VT I4). |
++-----------------------+-----------------------+-----------------------+
+| ITEM_EU_INFO          | 8                     | Item EUInfo (VT BSTR  |
++-----------------------+-----------------------+-----------------------+
+| RESERVED_RANGE_1      | 9                     | Reserved for future   |
+|                       |                       | OPC use (9-99 dec).   |
++-----------------------+-----------------------+-----------------------+
+| EU_UNITS              | 100                   | EU Units (VT BSTR).   |
+|                       |                       | E.g. “DEGC” or        |
+|                       |                       | “GALLONS”             |
++-----------------------+-----------------------+-----------------------+
+| ITEM_DESCRIPTION      | 101                   | Item description (VT  |
+|                       |                       | BSTR). E.g.           |
+|                       |                       | “Evaporator 6 Coolant |
+|                       |                       | Temp”                 |
++-----------------------+-----------------------+-----------------------+
+| HIGH_EU               | 102                   | High EU (VT R8).      |
+|                       |                       | Present only for      |
+|                       |                       | ‘analog’ data. This   |
+|                       |                       | represents the        |
+|                       |                       | highest value likely  |
+|                       |                       | to be obtained in     |
+|                       |                       | normal operation and  |
+|                       |                       | is intended for such  |
+|                       |                       | use as automatically  |
+|                       |                       | scaling a bargraph    |
+|                       |                       | display e.g. 1400.0   |
++-----------------------+-----------------------+-----------------------+
+| LOW_EU                | 103                   | Low EU (VT R8).       |
+|                       |                       | Present only for      |
+|                       |                       | ‘analog’ data. This   |
+|                       |                       | represents the lowest |
+|                       |                       | value likely to be    |
+|                       |                       | obtained in normal    |
+|                       |                       | operation and is      |
+|                       |                       | intended for such use |
+|                       |                       | as automatically      |
+|                       |                       | scaling a bargraph    |
+|                       |                       | display e.g. 1400.0   |
++-----------------------+-----------------------+-----------------------+
+| HIGH_INSTRUMENT_RANGE | 104                   | High Instrument Range |
+|                       |                       | (VT R8). Present only |
+|                       |                       | for ‘analog’ data.    |
+|                       |                       | This represents the   |
+|                       |                       | highest value that    |
+|                       |                       | can be returned by    |
+|                       |                       | the instrument        |
+|                       |                       | e.g. 9999.9           |
++-----------------------+-----------------------+-----------------------+
+| LOW_INSTRUMENT_RANGE  | 105                   | Low Instrument Range  |
+|                       |                       | (VT R8). Present only |
+|                       |                       | for ‘analog’ data.    |
+|                       |                       | This represents the   |
+|                       |                       | lowest value that can |
+|                       |                       | be returned by the    |
+|                       |                       | instrument            |
+|                       |                       | e.g. -9999.9          |
++-----------------------+-----------------------+-----------------------+
+| CONTACT_CLOSE_LABEL   | 106                   | Contact close label   |
+|                       |                       | (VT BSTR). Present    |
+|                       |                       | only for ‘discrete’   |
+|                       |                       | data. This represents |
+|                       |                       | a string to be        |
+|                       |                       | associated with this  |
+|                       |                       | contact when it is in |
+|                       |                       | the closed (non-zero) |
+|                       |                       | state e.g. “RUN”,     |
+|                       |                       | “CLOSE”, “ENABLE”,    |
+|                       |                       | “SAFE”, etc.          |
++-----------------------+-----------------------+-----------------------+
+| CONTACT_OPEN_LABEL    | 107                   | Contact open label    |
+|                       |                       | (VT BSTR). Present    |
+|                       |                       | only for ‘discrete’   |
+|                       |                       | data. This represents |
+|                       |                       | a string to be        |
+|                       |                       | associated with this  |
+|                       |                       | contact when it is in |
+|                       |                       | the opened (non-zero) |
+|                       |                       | state e.g. “RUN”,     |
+|                       |                       | “CLOSE”, “ENABLE”,    |
+|                       |                       | “SAFE”, etc.          |
++-----------------------+-----------------------+-----------------------+
+| ITEM_TIMEZONE         | 108                   | Item timezone (VT     |
+|                       |                       | I4). The difference   |
+|                       |                       | in minutes between    |
+|                       |                       | the items UTC         |
+|                       |                       | timestamp and the     |
+|                       |                       | local time in which   |
+|                       |                       | the item value was    |
+|                       |                       | obtained.             |
++-----------------------+-----------------------+-----------------------+
+| RESERVED_RANGE_2      | 109                   | Reserved for future   |
+|                       |                       | OPC use. (109-199     |
+|                       |                       | dec)                  |
++-----------------------+-----------------------+-----------------------+
+| CONDITION_STATUS      | 300                   | Condition status (VT  |
+|                       |                       | BSTR). The current    |
+|                       |                       | alarm or condition    |
+|                       |                       | status associated     |
+|                       |                       | with the item         |
+|                       |                       | e.g. “NORMAL”,        |
+|                       |                       | “ACTIVE”              |
++-----------------------+-----------------------+-----------------------+
+| ALARM_QUICK_HELP      | 301                   | Alarm quick help (VT  |
+|                       |                       | BSTR). A short text   |
+|                       |                       | string providing a    |
+|                       |                       | brief set of          |
+|                       |                       | instructions for the  |
+|                       |                       | operator to follow    |
+|                       |                       | when this alarm       |
+|                       |                       | occurs.               |
++-----------------------+-----------------------+-----------------------+
+| ALARM_AREA_LIST       | 302                   | Alarm area list (VT   |
+|                       |                       | BSTR                  |
++-----------------------+-----------------------+-----------------------+
+| PRIMARY_ALARM_AREA    | 303                   | Primary alarm area    |
+|                       |                       | (VT BSTR). A string   |
+|                       |                       | indicating the        |
+|                       |                       | primary plant or alrm |
+|                       |                       | area including this   |
+|                       |                       | item ID               |
++-----------------------+-----------------------+-----------------------+
+| CONDITION_LOGIC       | 304                   | Condition logic (VT   |
+|                       |                       | BSTR). An aribtrary   |
+|                       |                       | string describing the |
+|                       |                       | test being performed  |
+|                       |                       | e.g. “High Limit      |
+|                       |                       | exceeded”             |
++-----------------------+-----------------------+-----------------------+
+| LIMIT_EXCEEDED        | 305                   | Limit exceeded (VT    |
+|                       |                       | BSTR). For mulitstate |
+|                       |                       | alarms, the condition |
+|                       |                       | exceeded e.g. HIHI,   |
+|                       |                       | HI, LO, LOLO          |
++-----------------------+-----------------------+-----------------------+
+| DEADBAND              | 306                   | Deadband (VT R8).     |
++-----------------------+-----------------------+-----------------------+
+| HIHI_LIMIT            | 307                   | HiHi Limit (VT R8).   |
++-----------------------+-----------------------+-----------------------+
+| HI_LIMIT              | 308                   | Hi Limit (VT R8).     |
++-----------------------+-----------------------+-----------------------+
+| LO_LIMIT              | 309                   | Lo Limit (VT R8).     |
++-----------------------+-----------------------+-----------------------+
+| LOLO_LIMIT            | 310                   | LoLo Limit (VT R8).   |
++-----------------------+-----------------------+-----------------------+
+| RATE_OF_CHANGE_LIMIT  | 311                   | Rate of Change Limit  |
+|                       |                       | (VT R8).              |
++-----------------------+-----------------------+-----------------------+
+| DEVIATION_LIMIT       | 312                   | Deviation Limit (VT   |
+|                       |                       | R8).                  |
++-----------------------+-----------------------+-----------------------+
+| SOUND_FILE            | 313                   | Sound file (VT BSTR). |
+|                       |                       | e.g. C::r             |
+|                       |                       | aw-latex:`\MEDIA`:raw |
+|                       |                       | -latex:`\FIC`101.WAV, |
+|                       |                       | or MID                |
++-----------------------+-----------------------+-----------------------+
+| RESERVED_RANGE_3      | 320                   | Reserved for future   |
+|                       |                       | OPC Alarms and Events |
+|                       |                       | use (314-399 dec).    |
+|                       |                       | Additional IDs may be |
+|                       |                       | added without         |
+|                       |                       | revising the          |
+|                       |                       | interface ID.         |
++-----------------------+-----------------------+-----------------------+
+| RESERVED_RANGE_4      | 400                   | Reserved for future   |
+|                       |                       | OPC use (400-4999).   |
+|                       |                       | Additional IDs may be |
+|                       |                       | added without         |
+|                       |                       | revising the          |
+|                       |                       | interface ID.         |
++-----------------------+-----------------------+-----------------------+
+
+Unmanaged Members
+~~~~~~~~~~~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| EnumPropertyId\_      | 1                     | Item canonical        |
+| IT                    |                       | datatype (VT I2).     |
+| EM_CANONICAL_DATATYPE |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 2                     | Item value (variant). |
+| ITEM_VALUE            |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 3                     | Item quality (VT I2). |
+| ITEM_QUALITY          |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 4                     | Item timestamp (VT    |
+| ITEM_TIMESTAMP        |                       | DATE).                |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 5                     | Item access rights    |
+| ITEM_ACCESS_RIGHTS    |                       | (VT I4).              |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 6                     | Server scan rate in   |
+| SERVER_SCAN_RATE      |                       | milliseconds(VT R4).  |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 7                     | Item EU type (VT I4). |
+| ITEM_EU_TYPE          |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 8                     | Item EUInfo (VT BSTR  |
+| ITEM_EU_INFO          |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 9                     | Reserved for future   |
+| RESERVED_RANGE_1      |                       | OPC use (9-99 dec).   |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 100                   | EU Units (VT BSTR).   |
+| EU_UNITS              |                       | E.g. “DEGC” or        |
+|                       |                       | “GALLONS”             |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 101                   | Item description (VT  |
+| ITEM_DESCRIPTION      |                       | BSTR). E.g.           |
+|                       |                       | “Evaporator 6 Coolant |
+|                       |                       | Temp”                 |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 102                   | High EU (VT R8).      |
+| HIGH_EU               |                       | Present only for      |
+|                       |                       | ‘analog’ data. This   |
+|                       |                       | represents the        |
+|                       |                       | highest value likely  |
+|                       |                       | to be obtained in     |
+|                       |                       | normal operation and  |
+|                       |                       | is intended for such  |
+|                       |                       | use as automatically  |
+|                       |                       | scaling a bargraph    |
+|                       |                       | display e.g. 1400.0   |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 103                   | Low EU (VT R8).       |
+| LOW_EU                |                       | Present only for      |
+|                       |                       | ‘analog’ data. This   |
+|                       |                       | represents the lowest |
+|                       |                       | value likely to be    |
+|                       |                       | obtained in normal    |
+|                       |                       | operation and is      |
+|                       |                       | intended for such use |
+|                       |                       | as automatically      |
+|                       |                       | scaling a bargraph    |
+|                       |                       | display e.g. 1400.0   |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 104                   | High Instrument Range |
+| HIGH_INSTRUMENT_RANGE |                       | (VT R8). Present only |
+|                       |                       | for ‘analog’ data.    |
+|                       |                       | This represents the   |
+|                       |                       | highest value that    |
+|                       |                       | can be returned by    |
+|                       |                       | the instrument        |
+|                       |                       | e.g. 9999.9           |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 105                   | Low Instrument Range  |
+| LOW_INSTRUMENT_RANGE  |                       | (VT R8). Present only |
+|                       |                       | for ‘analog’ data.    |
+|                       |                       | This represents the   |
+|                       |                       | lowest value that can |
+|                       |                       | be returned by the    |
+|                       |                       | instrument            |
+|                       |                       | e.g. -9999.9          |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 106                   | Contact close label   |
+| CONTACT_CLOSE_LABEL   |                       | (VT BSTR). Present    |
+|                       |                       | only for ‘discrete’   |
+|                       |                       | data. This represents |
+|                       |                       | a string to be        |
+|                       |                       | associated with this  |
+|                       |                       | contact when it is in |
+|                       |                       | the closed (non-zero) |
+|                       |                       | state e.g. “RUN”,     |
+|                       |                       | “CLOSE”, “ENABLE”,    |
+|                       |                       | “SAFE”, etc.          |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 107                   | Contact open label    |
+| CONTACT_OPEN_LABEL    |                       | (VT BSTR). Present    |
+|                       |                       | only for ‘discrete’   |
+|                       |                       | data. This represents |
+|                       |                       | a string to be        |
+|                       |                       | associated with this  |
+|                       |                       | contact when it is in |
+|                       |                       | the opened (non-zero) |
+|                       |                       | state e.g. “RUN”,     |
+|                       |                       | “CLOSE”, “ENABLE”,    |
+|                       |                       | “SAFE”, etc.          |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 108                   | Item timezone (VT     |
+| ITEM_TIMEZONE         |                       | I4). The difference   |
+|                       |                       | in minutes between    |
+|                       |                       | the items UTC         |
+|                       |                       | timestamp and the     |
+|                       |                       | local time in which   |
+|                       |                       | the item value was    |
+|                       |                       | obtained.             |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 109                   | Reserved for future   |
+| RESERVED_RANGE_2      |                       | OPC use. (109-199     |
+|                       |                       | dec)                  |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 300                   | Condition status (VT  |
+| CONDITION_STATUS      |                       | BSTR). The current    |
+|                       |                       | alarm or condition    |
+|                       |                       | status associated     |
+|                       |                       | with the item         |
+|                       |                       | e.g. “NORMAL”,        |
+|                       |                       | “ACTIVE”              |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 301                   | Alarm quick help (VT  |
+| ALARM_QUICK_HELP      |                       | BSTR). A short text   |
+|                       |                       | string providing a    |
+|                       |                       | brief set of          |
+|                       |                       | instructions for the  |
+|                       |                       | operator to follow    |
+|                       |                       | when this alarm       |
+|                       |                       | occurs.               |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 302                   | Alarm area list (VT   |
+| ALARM_AREA_LIST       |                       | BSTR                  |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 303                   | Primary alarm area    |
+| PRIMARY_ALARM_AREA    |                       | (VT BSTR). A string   |
+|                       |                       | indicating the        |
+|                       |                       | primary plant or alrm |
+|                       |                       | area including this   |
+|                       |                       | item ID               |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 304                   | Condition logic (VT   |
+| CONDITION_LOGIC       |                       | BSTR). An aribtrary   |
+|                       |                       | string describing the |
+|                       |                       | test being performed  |
+|                       |                       | e.g. “High Limit      |
+|                       |                       | exceeded”             |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 305                   | Limit exceeded (VT    |
+| LIMIT_EXCEEDED        |                       | BSTR). For mulitstate |
+|                       |                       | alarms, the condition |
+|                       |                       | exceeded e.g. HIHI,   |
+|                       |                       | HI, LO, LOLO          |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 306                   | Deadband (VT R8).     |
+| DEADBAND              |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 307                   | HiHi Limit (VT R8).   |
+| HIHI_LIMIT            |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 308                   | Hi Limit (VT R8).     |
+| HI_LIMIT              |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 309                   | Lo Limit (VT R8).     |
+| LO_LIMIT              |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 310                   | LoLo Limit (VT R8).   |
+| LOLO_LIMIT            |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 311                   | Rate of Change Limit  |
+| RATE_OF_CHANGE_LIMIT  |                       | (VT R8).              |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 312                   | Deviation Limit (VT   |
+| DEVIATION_LIMIT       |                       | R8).                  |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 313                   | Sound file (VT BSTR). |
+| SOUND_FILE            |                       | e.g. C::r             |
+|                       |                       | aw-latex:`\MEDIA`:raw |
+|                       |                       | -latex:`\FIC`101.WAV, |
+|                       |                       | or MID                |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 320                   | Reserved for future   |
+| RESERVED_RANGE_3      |                       | OPC Alarms and Events |
+|                       |                       | use (314-399 dec).    |
+|                       |                       | Additional IDs may be |
+|                       |                       | added without         |
+|                       |                       | revising the          |
+|                       |                       | interface ID.         |
++-----------------------+-----------------------+-----------------------+
+| EnumPropertyId\_      | 400                   | Reserved for future   |
+| RESERVED_RANGE_4      |                       | OPC use (400-4999).   |
+|                       |                       | Additional IDs may be |
+|                       |                       | added without         |
+|                       |                       | revising the          |
+|                       |                       | interface ID.         |
++-----------------------+-----------------------+-----------------------+
+
+See Also
+~~~~~~~~
+
+`Softing.OPCToolbox Namespace <N_Softing_OPCToolbox.htm>`__

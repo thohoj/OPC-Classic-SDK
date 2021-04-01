@@ -1,0 +1,214 @@
+**EnumTraceGroup Enumeration**
+------------------------------
+
+| **Namespace:** `Softing.OPCToolbox <N_Softing_OPCToolbox.htm>`__
+| **Assembly:** TBN40 (in TBN40.dll) Version: 4.47.1.3920 (4.47.1.3920)
+
+Syntax
+~~~~~~
+
+Unmanaged C++
+^^^^^^^^^^^^^
+
+::
+
+   typedef enum tagEnumTraceGroup{ }EnumTraceGroup;    
+
+C
+^
+
+::
+
+   public enum EnumTraceGroup
+
+Visual Basic
+^^^^^^^^^^^^
+
+::
+
+   Public Enumeration EnumTraceGroup
+
+Visual C++
+^^^^^^^^^^
+
+::
+
+   public enum class EnumTraceGroup
+
+Members
+~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| ALL                   | 4294901775            | Everything is traced. |
++-----------------------+-----------------------+-----------------------+
+| NOTHING               | 0                     | Nothing is traced.    |
++-----------------------+-----------------------+-----------------------+
+| USER                  | 4278190080            | Everything of the     |
+|                       |                       | user definable part   |
+|                       |                       | of the trace group is |
+|                       |                       | traced.               |
++-----------------------+-----------------------+-----------------------+
+| OPCCLIENT             | 12                    | Client internal       |
+|                       |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| OPCCLIENTCALL         | 4                     | Client internal       |
+|                       |                       | method trace.         |
++-----------------------+-----------------------+-----------------------+
+| OPCCLIENTADVISE       | 8                     | Client internal       |
+|                       |                       | callbacks trace.      |
++-----------------------+-----------------------+-----------------------+
+| OPCSERVER             | 3                     | Server internal       |
+|                       |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| OPCSERVERCALL         | 1                     | Server internal       |
+|                       |                       | method trace.         |
++-----------------------+-----------------------+-----------------------+
+| OPCSERVERADVISE       | 2                     | Server internal       |
+|                       |                       | callbacks trace.      |
++-----------------------+-----------------------+-----------------------+
+| CLIENT                | 8388608               | OPC Toolkit Client    |
+|                       |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| SERVER                | 4194304               | OPC Toolkit Server    |
+|                       |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| LICENSE               | 2097152               | Licence concerned     |
+|                       |                       | trace output is       |
+|                       |                       | enabled.              |
++-----------------------+-----------------------+-----------------------+
+| OTSIN                 | 65536                 | Internal trace.       |
++-----------------------+-----------------------+-----------------------+
+| OTSOUT                | 131072                | Internal trace.       |
++-----------------------+-----------------------+-----------------------+
+| OTCIN                 | 262144                | Internal trace.       |
++-----------------------+-----------------------+-----------------------+
+| OTCOUT                | 524288                | Internal trace.       |
++-----------------------+-----------------------+-----------------------+
+| USER1                 | 2147483648            | User group part 1 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| USER2                 | 1073741824            | User group part 2 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| USER3                 | 536870912             | User group part 3 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| USER4                 | 268435456             | User group part 4 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| USER5                 | 134217728             | User group part 5 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| USER6                 | 67108864              | User group part 6 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| USER7                 | 33554432              | User group part 7 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| USER8                 | 16777216              | User group part 8 to  |
+|                       |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+
+Unmanaged Members
+~~~~~~~~~~~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| EnumTraceGroup\_ ALL  | 4294901775            | Everything is traced. |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 0                     | Nothing is traced.    |
+| NOTHING               |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_ USER | 4278190080            | Everything of the     |
+|                       |                       | user definable part   |
+|                       |                       | of the trace group is |
+|                       |                       | traced.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 12                    | Client internal       |
+| OPCCLIENT             |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 4                     | Client internal       |
+| OPCCLIENTCALL         |                       | method trace.         |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 8                     | Client internal       |
+| OPCCLIENTADVISE       |                       | callbacks trace.      |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 3                     | Server internal       |
+| OPCSERVER             |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 1                     | Server internal       |
+| OPCSERVERCALL         |                       | method trace.         |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 2                     | Server internal       |
+| OPCSERVERADVISE       |                       | callbacks trace.      |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 8388608               | OPC Toolkit Client    |
+| CLIENT                |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 4194304               | OPC Toolkit Server    |
+| SERVER                |                       | trace.                |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 2097152               | Licence concerned     |
+| LICENSE               |                       | trace output is       |
+|                       |                       | enabled.              |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 65536                 | Internal trace.       |
+| OTSIN                 |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 131072                | Internal trace.       |
+| OTSOUT                |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 262144                | Internal trace.       |
+| OTCIN                 |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 524288                | Internal trace.       |
+| OTCOUT                |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 2147483648            | User group part 1 to  |
+| USER1                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 1073741824            | User group part 2 to  |
+| USER2                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 536870912             | User group part 3 to  |
+| USER3                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 268435456             | User group part 4 to  |
+| USER4                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 134217728             | User group part 5 to  |
+| USER5                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 67108864              | User group part 6 to  |
+| USER6                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 33554432              | User group part 7 to  |
+| USER7                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+| EnumTraceGroup\_      | 16777216              | User group part 8 to  |
+| USER8                 |                       | be OR’ed with other   |
+|                       |                       | groups.               |
++-----------------------+-----------------------+-----------------------+
+
+See Also
+~~~~~~~~
+
+`Softing.OPCToolbox Namespace <N_Softing_OPCToolbox.htm>`__

@@ -1,0 +1,96 @@
+**EnumOPCSpecification Enumeration**
+------------------------------------
+
+| **Namespace:** `Softing.OPCToolbox <N_Softing_OPCToolbox.htm>`__
+| **Assembly:** TBN40 (in TBN40.dll) Version: 4.47.1.3920 (4.47.1.3920)
+
+Syntax
+~~~~~~
+
+Unmanaged C++
+^^^^^^^^^^^^^
+
+::
+
+   typedef enum tagEnumOPCSpecification{   }EnumOPCSpecification;
+
+C
+^
+
+::
+
+   public enum EnumOPCSpecification
+
+Visual Basic
+^^^^^^^^^^^^
+
+::
+
+   Public Enumeration EnumOPCSpecification
+
+Visual C++
+^^^^^^^^^^
+
+::
+
+   public enum class EnumOPCSpecification
+
+Members
+~~~~~~~
+
++-----------------+-----------+--------------------------------------+
+| **Member name** | **Value** | **Description**                      |
++=================+===========+======================================+
+| DEFAULT         | 0         | The current OPC Specification.       |
++-----------------+-----------+--------------------------------------+
+| DA10            | 3         | OPC Data Access Specification        |
+|                 |           | version 1.0.                         |
++-----------------+-----------+--------------------------------------+
+| DA20            | 4         | OPC Data Access Specification        |
+|                 |           | version 2.0.                         |
++-----------------+-----------+--------------------------------------+
+| DA30            | 16        | OPC Data Access Specification        |
+|                 |           | version 3.0.                         |
++-----------------+-----------+--------------------------------------+
+| AE10            | 8         | OPC Alarms and Events Specification  |
+|                 |           | version 1.10.                        |
++-----------------+-----------+--------------------------------------+
+| XMLDA10         | 32        | OPC XML Data Access Specification    |
+|                 |           | version 1.01.                        |
++-----------------+-----------+--------------------------------------+
+
+Unmanaged Members
+~~~~~~~~~~~~~~~~~
+
++-----------------------+-----------------------+-----------------------+
+| **Member name**       | **Value**             | **Description**       |
++=======================+=======================+=======================+
+| E                     | 0                     | The current OPC       |
+| numOPCSpecification\_ |                       | Specification.        |
+| DEFAULT               |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| E                     | 3                     | OPC Data Access       |
+| numOPCSpecification\_ |                       | Specification version |
+| DA10                  |                       | 1.0.                  |
++-----------------------+-----------------------+-----------------------+
+| E                     | 4                     | OPC Data Access       |
+| numOPCSpecification\_ |                       | Specification version |
+| DA20                  |                       | 2.0.                  |
++-----------------------+-----------------------+-----------------------+
+| E                     | 16                    | OPC Data Access       |
+| numOPCSpecification\_ |                       | Specification version |
+| DA30                  |                       | 3.0.                  |
++-----------------------+-----------------------+-----------------------+
+| E                     | 8                     | OPC Alarms and Events |
+| numOPCSpecification\_ |                       | Specification version |
+| AE10                  |                       | 1.10.                 |
++-----------------------+-----------------------+-----------------------+
+| E                     | 32                    | OPC XML Data Access   |
+| numOPCSpecification\_ |                       | Specification version |
+| XMLDA10               |                       | 1.01.                 |
++-----------------------+-----------------------+-----------------------+
+
+See Also
+~~~~~~~~
+
+`Softing.OPCToolbox Namespace <N_Softing_OPCToolbox.htm>`__
