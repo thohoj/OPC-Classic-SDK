@@ -1,1 +1,0 @@
-for /r "." %%i in (*.md) do pandoc --from markdown --to rst "%%~fi" -o "%%~dpni.rst"
