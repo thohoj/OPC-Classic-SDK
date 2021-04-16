@@ -1,6 +1,3 @@
-dataFEED OPC Classic SDK documentation
-#####################################
-
 .. toctree::
 
    index

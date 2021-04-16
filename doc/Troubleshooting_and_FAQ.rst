@@ -1,5 +1,7 @@
-**Troubleshooting and FAQ**
----------------------------
+.. _TroubleshootingandFAQ:
+
+Troubleshooting and FAQ
+=======================
 
 “No content was found on your computer” when using F1 within VS2010
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
