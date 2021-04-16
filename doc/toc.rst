@@ -1,12 +1,15 @@
+dataFEED OPC Classic SDK documentation
+#####################################
+
 .. toctree::
 
    index
-   Introduction to OPC
+   IntroductiontoOPC
    Installation
-   Programmer's Guide
-   Programming Samples
-   Programming Tutorial
-   Deployment and Security
-   Reference Manual
+   ProgrammersGuide
+   ProgrammingSamples
+   ProgrammingTutorial
+   DeploymentandSecurity
+   ReferenceManual
    Copyrights
-   Troubleshooting and FAQ
+   TroubleshootingandFAQ
